@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-snowpack-app"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/_dist_/index.css"
+    />
+    <title>Daily images</title>
+  </head>
+
+  <body>
+    <div class="py-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+
+        <p class="text-base leading-6 text-pink-600 font-semibold tracking-wide uppercase">
+          - By creative people -
+        </p>
+        <h3 class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-10">
+          Enjoy colorfull images
+        </h3>
+
+        <div id="main" class="main">
+          <div id="main__sideBar" class="w-3/12 flex flex-col items-center h-4/5">
+            <div class="bg-pink-100 rounded-md p-8">
+              <h3 class="font-medium text-lg mb-4 text-pink-600">Choose a color</h3>
+              <div id="main__buttonsContainer" class="flex-wrap justtify-center">
+                <button class="mb-2 rounded-full h-16 w-16 bg-purple-600 shadow-lg focus:outline-none focus:ring" value="purple"></button>
+                <button class="mb-2 rounded-full h-16 w-16 bg-red-500 shadow-lg focus:outline-none focus:ring" value="red"></button>
+                <button class="mb-2 rounded-full h-16 w-16 bg-yellow-500 shadow-lg focus:outline-none focus:ring" value="orange color"></button>
+                <button class="mb-2 rounded-full h-16 w-16 bg-green-500 shadow-lg focus:outline-none focus:ring" value="green"></button>
+                <button class="mb-2 rounded-full h-16 w-16 border-2 shadow-lg bg-rainbow focus:outline-none focus:ring" value="rainbow background"></button>
+                <button class="mb-2 rounded-full h-16 w-16 bg-yellow-300 shadow-lg focus:outline-none focus:ring" value="yellow"></button>
+                <button class="mb-2 rounded-full h-16 w-16 bg-blue-500 shadow-lg focus:outline-none focus:ring" value="blue"></button>
+                <button class="mb-2 rounded-full h-16 w-16 shadow-lg bg-bw focus:outline-none focus:ring" value="black and white"></button>
+                <button class="mb-2 rounded-full h-16 w-16 bg-pink-600 shadow-lg focus:outline-none focus:ring" value="pink"></button>
+              </div>
+            </div>
+            <button id="main__buttonDelete" class="hidden displayButton">Delete all images</button>
+          </div>
+          <div id="main__imagesContainer" class ="hidden"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <script type="module" src="/_dist_/index.js"></script>
+  </body>
+</html>
